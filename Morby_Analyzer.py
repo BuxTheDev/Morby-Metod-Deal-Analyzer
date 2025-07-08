@@ -10,9 +10,9 @@ st.header("🔢 Deal Inputs")
 
 col1, col2 = st.columns(2)
 with col1:
-    purchase_price = st.number_input("Purchase Price ($)", value=325000)
-    market_rent = st.number_input("Monthly Market Rent ($)", value=3200)
-    closing_costs = st.number_input("Estimated Closing Costs ($)", value=5000)
+    purchase_price = st.number_input("Purchase Price ($)", value=0)
+    market_rent = st.number_input("Monthly Market Rent ($)", value=0)
+    closing_costs = st.number_input("Estimated Closing Costs ($)", value=0)
     max_ltv_pct = st.slider("Max LTV % for DSCR Loan", 50, 90, 75)
 
 with col2:
