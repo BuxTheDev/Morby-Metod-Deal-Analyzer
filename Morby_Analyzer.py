@@ -1,5 +1,18 @@
 import streamlit as st
 
+def inject_dm_sans():
+    st.markdown("""
+                <style>
+                @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+        html, body, [class*="css"]  {
+            font-family: 'DM Sans', sans-serif;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+inject_dm_sans()
+
 st.set_page_config(page_title="Morby Method Deal Analyzer", layout="centered")
 
 st.title("🏡 Morby Method Deal Analyzer")
